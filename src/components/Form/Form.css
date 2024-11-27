@@ -1,0 +1,100 @@
+/* General styling */
+
+  
+  form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6a1b9a; /* Purple color */
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Input Fields */
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  select:focus {
+    border-color: #6a1b9a;
+    outline: none;
+  }
+  
+  /* Placeholder styling */
+  input::placeholder {
+    color: #888;
+  }
+  
+  /* Error messages */
+  .error-message {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+  
+  /* Button */
+  button[type="submit"] {
+    background-color: #6a1b9a; /* Purple */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #8e24aa; /* Lighter purple */
+  }
+  
+  /* Input fields when invalid */
+  input:invalid,
+  select:invalid {
+    border-color: #e74c3c;
+  }
+  
+  input:invalid:focus,
+  select:invalid:focus {
+    border-color: #e74c3c;
+  }
+  
+  /* Specific styles for 'Other' input field */
+  input#otherDeployment {
+    display: block;
+    margin-top: 10px;
+    border-color: #6a1b9a;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  }
+  
