@@ -75,13 +75,13 @@ const Form = () => {
     };
 
     //dev
-    // fetch('https://veritiautomation.app.n8n.cloud/webhook-test/7224427a-fe17-4c7c-a21c-bc3ac58accca', {
+    fetch('https://hooks.zapier.com/hooks/catch/20864102/2i1wokz/', {
     //prod
-    fetch('https://veritiautomation.app.n8n.cloud/webhook/7224427a-fe17-4c7c-a21c-bc3ac58accca', {
+    // fetch('https://veritiautomation.app.n8n.cloud/webhook/7224427a-fe17-4c7c-a21c-bc3ac58accca', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      // headers: {
+      //   'Content-Type': 'application/json',
+      // },
       body: JSON.stringify(formData),
     })
       .then((response) => {
